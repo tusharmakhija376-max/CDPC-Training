@@ -1,0 +1,227 @@
+#find last digit
+# no=int(input("enter the value"))
+# res=no%10
+# print(res)
+
+#sum of two digit
+# no=int(input("enter the value"))
+# n1=no%10
+# n2=no//10
+# res=n1+n2
+# print(res)
+
+#sum of three digit no.
+# no=int(input("enter the value"))
+# n1=no%10
+# no=no//10
+# n2=no%10
+# n3=no//10
+# res=n1+n2+n3
+# print(res)
+
+#sum of five digit no.
+# no=int(input("enter the value"))
+# n1=no%10 
+# no=no//10
+# n2=no%10
+# no=no//10
+# n3=no%10
+# no=no//10
+# n4=no%10
+# n5=no//10
+# res=n1+n2+n3+n4+n5
+# print(res)
+
+#reverse of 5 digit no
+# no=int(input("enter the value"))
+# n1=no%10 
+# no=no//10
+# n2=no%10
+# no=no//10
+# n3=no%10
+# no=no//10
+# n4=no%10
+# n5=no//10
+# res=n1*10000+n2*1000+n3*100+n4*10+n5
+# print(res)
+
+#accept 9 digit no.& find sum of 1st & last digit ( in 3 steps)
+# no=int(input("enter the value"))
+# n1=no%10
+# n2=no//100000000
+# res=n1+n2
+# print(res)
+
+#accept basic salary and calculate gross salary where
+# TA =20%
+# DA=30%
+# HRA=40%
+# bs=int(int(input("enter salary")))
+# TA=20%100
+# DA=30%100
+# HRA=40%100
+# GS=bs+TA+DA+HRA
+# res=GS
+# print(res)
+
+#homework: sum of 9 digit no. and reverse it
+# no=int(input("Enter the value"))
+# n1=no%10
+# no=no//10
+# n2=no%10
+# no=no//10
+# n3=no%10
+# no=no//10
+# n4=no%10
+# no=no//10
+# n5=no%10
+# no=no//10
+# n6=no%10
+# no=no//10
+# n7=no%10
+# no=no//10
+# n8=no%10
+# no=no//10
+# n9=no%10
+# res=n1+n2+n3+n4+n5+n6+n7+n8+n9
+# a=n1*100000000+n2*10000000+n3*1000000+n4*100000+n5*10000+n6*1000+n7*100+n8*10+n9
+# print(a)
+# print(res)
+
+
+# no=(int(input("enter the value")))
+# n1=no%10
+# no=no//10
+# n2=no%10
+# n3=no//10
+# a=!n1
+# b=!n2
+# c=!n3
+# if (a+b+c)
+
+#find last digit
+# no=int(input("enter the value"))
+# res=no%10
+# print(res)
+
+#sum of two digit
+# no=int(input("enter the value"))
+# n1=no%10
+# n2=no//10
+# res=n1+n2
+# print(res)
+
+#sum of three digit no.
+# no=int(input("enter the value"))
+# n1=no%10
+# no=no//10
+# n2=no%10
+# n3=no//10
+# res=n1+n2+n3
+# print(res)
+
+#sum of five digit no.
+# no=int(input("enter the value"))
+# n1=no%10 
+# no=no//10
+# n2=no%10
+# no=no//10
+# n3=no%10
+# no=no//10
+# n4=no%10
+# n5=no//10
+# res=n1+n2+n3+n4+n5
+# print(res)
+
+#reverse of 5 digit no
+# no=int(input("enter the value"))
+# n1=no%10 
+# no=no//10
+# n2=no%10
+# no=no//10
+# n3=no%10
+# no=no//10
+# n4=no%10
+# n5=no//10
+# res=n1*10000+n2*1000+n3*100+n4*10+n5
+# print(res)
+
+#accept 9 digit no.& find sum of 1st & last digit ( in 3 steps)
+# no=int(input("enter the value"))
+# n1=no%10
+# n2=no//100000000
+# res=n1+n2
+# print(res)
+
+#accept basic salary and calculate gross salary where
+# TA =20%
+# DA=30%
+# HRA=40%
+# bs=int(int(input("enter salary")))
+# TA=20%100
+# DA=30%100
+# HRA=40%100
+# GS=bs+TA+DA+HRA
+# res=GS
+# print(res)
+
+#homework: sum of 9 digit no. and reverse it
+# no=int(input("Enter the value"))
+# n1=no%10
+# no=no//10
+# n2=no%10
+# no=no//10
+# n3=no%10
+# no=no//10
+# n4=no%10
+# no=no//10
+# n5=no%10
+# no=no//10
+# n6=no%10
+# no=no//10
+# n7=no%10
+# no=no//10
+# n8=no%10
+# no=no//10
+# n9=no%10
+# res=n1+n2+n3+n4+n5+n6+n7+n8+n9
+# a=n1*100000000+n2*10000000+n3*1000000+n4*100000+n5*10000+n6*1000+n7*100+n8*10+n9
+# print(a)
+# print(res)
+
+
+# no=(int(input("enter the value")))
+# n1=no%10
+# no=no//10
+# n2=no%10
+# n3=no//10
+# a=!n1
+# b=!n2
+# c=!n3
+# if (a+b+c)
+
+#reverse digit using loop
+# no=int(input("Enter the value"))
+# rev=0
+# while no>0:
+#   rem=no%10
+#   rev=rev*10+rem
+#   no=no//10
+# print("reverse no. is",rev)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

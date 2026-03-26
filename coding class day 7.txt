@@ -1,0 +1,60 @@
+Hacker Earth Questions
+
+1.Roy wants to change his profile picture on Facebook. Now Facebook has some restriction over the dimension of picture that we can upload.
+Minimum dimension of the picture can be L x L, where L is the length of the side of square.
+
+Now Roy has N photos of various dimensions.
+Dimension of a photo is denoted as W x H
+where W - width of the photo and H - Height of the photo
+
+When any photo is uploaded following events may occur:
+
+[1] If any of the width or height is less than L, user is prompted to upload another one. Print "UPLOAD ANOTHER" in this case.
+[2] If width and height, both are large enough and
+(a) if the photo is already square then it is accepted. Print "ACCEPTED" in this case.
+(b) else user is prompted to crop it. Print "CROP IT" in this case.
+
+L=int(input())
+N=int(input())
+for x in range(N):
+    W,H=map(int,input().split())
+    if W<L or W<H:
+        print("UPLOAD ANOTHER")
+    elif W==H:
+        print("ACCEPTED")
+    else:
+        print("CROP IT")
+
+
+2. Monk loves to preform different operations on arrays, and so being the principal of Hackerearth School, he assigned a task to his new student Mishki. Mishki will be provided with an integer array A of size N and an integer K , where she needs to rotate the array in the right direction by K steps and then print the resultant array. As she is new to the school, please help her to complete the task
+
+
+T = int(input())
+
+for _ in range(T):
+    N, K = map(int, input().split())
+    A = list(map(int, input().split()))
+    
+    K = K % N
+    result = A[-K:] + A[:-K]
+    
+    print(*result)
+
+
+3. You have been given a String S consisting of uppercase and lowercase English alphabets. You need to change the case of each alphabet in this String. That is, all the uppercase letters should be converted to lowercase and all the lowercase letters should be converted to uppercase. You need to then print the resultant String to output.
+
+
+# S = input()
+
+# result = ""
+
+# for ch in S:
+#     if ch.islower():
+#         result += ch.upper()
+#     else:
+#         result += ch.lower()
+
+# print(result)
+s=input()
+ans=s.swapcase()
+print(ans)

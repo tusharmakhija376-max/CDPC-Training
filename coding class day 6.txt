@@ -1,0 +1,186 @@
+Hacker Rank Questions
+
+1.Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from 1 to 100 for three categories: problem clarity, originality, and difficulty.
+
+The rating for Alice's challenge is the triplet a = (a[0], a[1], a[2]), and the rating for Bob's challenge is the triplet b = (b[0], b[1], b[2]).
+
+The task is to calculate their comparison points by comparing each category:
+
+If a[i] > b[i], then Alice is awarded 1 point.
+If a[i] < b[i], then Bob is awarded 1 point.
+If a[i] = b[i], then neither person receives a point.
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'compareTriplets' function below.
+#
+# The function is expected to return an INTEGER_ARRAY.
+# The function accepts following parameters:
+#  1. INTEGER_ARRAY a
+#  2. INTEGER_ARRAY b
+#
+
+def compareTriplets(a, b):
+    Alice=0
+    Bob=0
+    for i in range(len(a)):
+       if a[i]>b[i]:
+        Alice=Alice+1
+       elif a[i]<b[i]: 
+        Bob=Bob+1
+       else:
+        pass
+    return Alice,Bob
+    
+    
+        
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    a = list(map(int, input().rstrip().split()))
+
+    b = list(map(int, input().rstrip().split()))
+
+    result = compareTriplets(a, b)
+
+    fptr.write(' '.join(map(str, result)))
+    fptr.write('\n')
+
+    fptr.close()
+
+2.In this challenge, you need to calculate and print the sum of elements in an array, considering that some integers may be very large.
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'aVeryBigSum' function below.
+#
+# The function is expected to return a LONG_INTEGER.
+# The function accepts LONG_INTEGER_ARRAY ar as parameter.
+#
+
+def aVeryBigSum(ar):
+    sum=0
+    for i in range(len(ar))
+    
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    ar_count = int(input().strip())
+
+    ar = list(map(int, input().rstrip().split()))
+
+    result = aVeryBigSum(ar)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
+
+
+
+3.Given a square matrix, calculate the absolute difference between the sums of its diagonals.
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+# Complete the 'diagonalDifference' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts 2D_INTEGER_ARRAY arr as parameter.
+
+
+def diagonalDifference(arr):
+    sum1=0
+    sum2=0
+    for i in range(len(arr)):
+        sum1=sum1+arr[i][i]
+        sum2=sum2+arr[i][n-i-1]
+    res=sum1-sum2
+    return abs(res)
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    n = int(input().strip())
+
+    arr = []
+
+    for _ in range(n):
+        arr.append(list(map(int, input().rstrip().split())))
+
+    result = diagonalDifference(arr)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
+
+
+4.Given an array of integers, calculate the ratios of its elements that are , , and . Print the decimal value of each fraction on a new line with 6 places after the decimal.
+
+Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable
+
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'plusMinus' function below.
+#
+# The function accepts INTEGER_ARRAY arr as parameter.
+#
+
+def plusMinus(arr):
+    pos=0
+    neg=0
+    zero=0
+    n=len(arr)
+    for i in range(len(arr)):
+        if arr[i]<0:
+            pos=pos+1
+        elif arr[i]>0:
+            neg=neg+1
+        elif arr[i]==0:
+            zero=zero+1
+    pos=pos/n
+    neg=neg/n
+    zero=zero/n
+    print(f"{pos:.6f}")
+    print(f"{neg:.6f}")
+    print(f"{zero:.6f}")
+         
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    arr = list(map(int, input().rstrip().split()))
+
+    plusMinus(arr)
+
+
+

@@ -1,0 +1,106 @@
+ accept 4 numbers abd find max numbers
+# n1=int(input("Enter value: "))
+# n2=int(input("Enter value: "))
+# n3=int(input("Enter value: "))
+# n4=int(input("Enter value: "))
+# max=n1
+# if max<n2:
+#     max=n2
+# if max<n3:
+#     max=n3
+# if max<n4:
+#     max=m4
+# print("max=",max)
+
+#find min max of arry
+# arr=[3,4,1,7,9]
+# max=arr[0]
+# min=arr[0]
+# for i in range(1,len(arr)):
+#     if max<arr[i]:
+#       max=arr[i]
+
+#     if min>arr[i]:
+#       min=arr[i]
+# print(max)
+# print(min)
+
+
+#check leap year
+# year=int(input("Enter year: "))
+# if year%100!=0:
+#     if year%4==0:
+#         print("Non century leap year")
+#     else:
+#         print("Not leap year")
+# else:
+#     if year%400==0:
+#         print("century leap year")
+#     else:
+#         print("Not leap year")
+
+# tech numbers
+# n=int(input("enter the value: "))
+# n1=n%100
+# n2=n//100
+# sum=n1+n2
+# n3=sum*sum
+# if n==n3:
+#     print("Tech number")
+# else:
+#     print("Non Tech number")
+
+
+Hacker Rank Questions
+
+
+1. Complete the function  to compute the sum of two integers.
+
+
+def solveMeFirst(a,b):
+	# Hint: Type return a+b below
+ return a+b
+num1 = int(input())
+num2 = int(input())
+res = solveMeFirst(num1,num2)
+print(res)
+
+
+2.Given an array of integers, find the sum of its elements.
+
+For example, if the array , , so return .
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'simpleArraySum' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts INTEGER_ARRAY ar as parameter.
+#
+
+def simpleArraySum(ar):
+    # Write your code here
+  sum=0
+  for i in ar:
+      sum=sum+i
+  return sum
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    ar_count = int(input().strip())
+
+    ar = list(map(int, input().rstrip().split()))
+
+    result = simpleArraySum(ar)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
+
